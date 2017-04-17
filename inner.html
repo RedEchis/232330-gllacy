@@ -8,7 +8,7 @@
      <header class="main-header">
       <div class="container">
         <div class="header-logo">
-          <img src="#" alt="Глейси">
+          <a href="#"><img src="#" alt="Глейси"></a>
         </div>
         <nav class="main-navigation">
           <ul>
@@ -24,13 +24,18 @@
           </ul>
         </nav>
         <div class="user-block">
-          <input type="text" name="search">
-          <input type="submit">
-          <a class="login" href="#">Вход</a>
+          <form action="#" method="post">
+            <input type="text" name="search">
+            <input type="submit">
+          </form>
+          <div class="login">
+          <a href="#">Вход</a>
+          </div>
           <a class="basket" href="#">Пусто</a>
         </div>
         <div class="header-info">
-          <p>С 10 до 20, ежедневно 8 812 450-25-25</p>
+          <p>С 10 до 20, ежедневно</p>
+          <p>8 812 450-25-25</p>
         </div>
       </div>
     </header>
@@ -47,21 +52,21 @@
             Сливочное
           </li>
         </ul>
-        <p class="promotion-name">Сливочное мороженое</p>
+        <h1>Сливочное мороженое</h1>
       </div>
-      <div class="filters-item">
-        <div class="filter-item-popular">
-          <label for="select">Сортировка:</label>
+      <div class="container">
+        <fieldset>
+          <legend>Сортировка:</legend>
           <select name="select">
             <option value="popular">по популярности</option>
           </select>
-        </div>
-        <div class="filter-item-slider">
-          <label for="slider">Цена: 100 руб. - 500 руб.</label>
-          <input type="text" name="slider" value="Я слайдер! Я крут!">
-        <div>
-        <div class="filter-item-oil">
-          <label for="group-item">Жирность:</label>
+        </fieldset >
+        <fieldset >
+          <legend>Цена: 100 руб. - 500 руб.</legend>
+          <input type="range" name="slider" value="Я слайдер! Я крут!">
+        </fieldset >
+        <fieldset >
+          <legend for="group-item">Жирность:</legend>
           <label>
             <input type="radio" name="group-item" value="0%">
             0%
@@ -78,9 +83,9 @@
             <input type="radio" name="group-item" value="выше 30%">
             выше 30%
           </label>
-        </div>
-        <div class="filter-item-tastes">
-          <label for="taste">Наполнители:</label>
+        </fieldset >
+        <fieldset >
+          <legend>Наполнители:</legend>
           <input type="checkbox" name="taste" id="chocolate" checked>
           <label for="chocolate">шоколадные</label>
           <input type="checkbox" name="taste" id="sugar" checked>
@@ -91,7 +96,7 @@
           <label for="suryp">сиропы</label>
           <input type="checkbox" name="taste" id="jam">
           <label for="jam">джемы</label>
-        </div>
+        </fieldset >
       </div>
       <div class="containers">
         <article>
@@ -155,12 +160,12 @@
           <a href="#">Сливочное с мятным сиропом</a>
         </article>
       </div>
-      <div class="item-navigation">
-        <button class="btn item-nav" type="button">1</button>
-        <button class="btn item-nav" type="button">2</button>
-        <button class="btn item-nav" type="button">3</button>
-        <button class="btn item-nav" type="button">4</button>
-        <button class="btn item-nav" type="button">5</button>
+      <div class="paginator">
+        <a class="paginator" class="paginator-active" href="">1</a>
+        <a class="paginator" href="">2</a>
+        <a class="paginator" href="">3</a>
+        <a class="paginator" href="">4</a>
+        <a class="paginator" href="">5</a>
       </div>
     </main>
     <footer class="main-footer">
@@ -178,7 +183,7 @@
           <a href="#">Экологические стандарты</a>
         </section>
         <section class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-copyright" src="#"></a>
           <p>Сделано в
           <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
           ©2016</p>
