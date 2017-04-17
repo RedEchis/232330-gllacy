@@ -55,48 +55,50 @@
         <h1>Сливочное мороженое</h1>
       </div>
       <div class="container">
-        <fieldset>
-          <legend>Сортировка:</legend>
-          <select name="select">
-            <option value="popular">по популярности</option>
-          </select>
-        </fieldset >
-        <fieldset >
-          <legend>Цена: 100 руб. - 500 руб.</legend>
-          <input type="range" name="slider" value="Я слайдер! Я крут!">
-        </fieldset >
-        <fieldset >
-          <legend for="group-item">Жирность:</legend>
-          <label>
-            <input type="radio" name="group-item" value="0%">
-            0%
-          </label>
-          <label>
-            <input type="radio" name="group-item" value="до 10%" checked>
-            до 10%
-          </label>
-          <label>
-            <input type="radio" name="group-item" value="до 30%">
-            до 30%
-          </label>
-          <label>
-            <input type="radio" name="group-item" value="выше 30%">
-            выше 30%
-          </label>
-        </fieldset >
-        <fieldset >
-          <legend>Наполнители:</legend>
-          <input type="checkbox" name="taste" id="chocolate" checked>
-          <label for="chocolate">шоколадные</label>
-          <input type="checkbox" name="taste" id="sugar" checked>
-          <label for="sugar">сахарные присыпки</label>
-          <input type="checkbox" name="taste" id="fruits">
-          <label for="fruits">фрукты</label>
-          <input type="checkbox" name="taste" id="suryp">
-          <label for="suryp">сиропы</label>
-          <input type="checkbox" name="taste" id="jam">
-          <label for="jam">джемы</label>
-        </fieldset >
+        <form method="post" action="#">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <select name="select">
+              <option value="popular">по популярности</option>
+            </select>
+          </fieldset >
+          <fieldset >
+            <legend>Цена: 100 руб. - 500 руб.</legend>
+            <input type="range" name="slider" value="Я слайдер! Я крут!">
+          </fieldset >
+          <fieldset >
+            <legend for="group-item">Жирность:</legend>
+            <label>
+              <input type="radio" name="group-item" value="0%">
+              0%
+            </label>
+            <label>
+              <input type="radio" name="group-item" value="до 10%" checked>
+              до 10%
+            </label>
+            <label>
+              <input type="radio" name="group-item" value="до 30%">
+              до 30%
+            </label>
+            <label>
+              <input type="radio" name="group-item" value="выше 30%">
+              выше 30%
+            </label>
+          </fieldset >
+          <fieldset >
+            <legend>Наполнители:</legend>
+            <input type="checkbox" name="taste" id="chocolate" checked>
+            <label for="chocolate">шоколадные</label>
+            <input type="checkbox" name="taste" id="sugar" checked>
+            <label for="sugar">сахарные присыпки</label>
+            <input type="checkbox" name="taste" id="fruits">
+            <label for="fruits">фрукты</label>
+            <input type="checkbox" name="taste" id="suryp">
+            <label for="suryp">сиропы</label>
+            <input type="checkbox" name="taste" id="jam">
+            <label for="jam">джемы</label>
+          </fieldset >
+        </form>
       </div>
       <div class="containers">
         <article>
@@ -161,11 +163,11 @@
         </article>
       </div>
       <div class="paginator">
-        <a class="paginator" class="paginator-active" href="">1</a>
-        <a class="paginator" href="">2</a>
-        <a class="paginator" href="">3</a>
-        <a class="paginator" href="">4</a>
-        <a class="paginator" href="">5</a>
+        <a class="paginator-active" href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
       </div>
     </main>
     <footer class="main-footer">
