@@ -63,27 +63,20 @@
             </select>
           </fieldset >
           <fieldset >
-            <legend>Цена: 100 руб. - 500 руб.</legend>
-            <input type="range" name="slider" value="Я слайдер! Я крут!">
+            <legend>Цена:</legend>
+            <input type="range" min="100" max="500" step="10" id="price">
+            <label for="price">От 100р. - до 500р.</label> <!--а такой вариант, пока без js, подойдет? -->
           </fieldset >
           <fieldset >
             <legend for="group-item">Жирность:</legend>
-            <label>
-              <input type="radio" name="group-item" value="0%">
-              0%
-            </label>
-            <label>
-              <input type="radio" name="group-item" value="до 10%" checked>
-              до 10%
-            </label>
-            <label>
-              <input type="radio" name="group-item" value="до 30%">
-              до 30%
-            </label>
-            <label>
-              <input type="radio" name="group-item" value="выше 30%">
-              выше 30%
-            </label>
+            <input type="radio" name="group-item" value="0%" id="0">
+            <label for="0">0%</label>
+            <input type="radio" name="group-item" value="до 10%" id="10-" checked>
+            <label for="10-">до 10%</label>
+            <input type="radio" name="group-item" value="до 30%" id="30-">
+            <label for="30-"> до 30%</label>
+            <input type="radio" name="group-item" value="выше 30%" id="30+">
+            <label for="30+">выше 30%</label>
           </fieldset >
           <fieldset >
             <legend>Наполнители:</legend>
