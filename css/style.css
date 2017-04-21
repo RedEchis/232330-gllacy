@@ -1,0 +1,24 @@
+body{
+   background:#8a9c8f;
+   font-size: 12px;
+   font-family: "Roboto";
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   line-height: 1.222;
+}
+.first-header <!-- Результат совсем не похож на макет-->
+{
+font-size: 60px;
+color: rgb(255, 255, 255);
+font-family: "Roboto";
+font-weight: bold;
+line-height: 1.006;
+}
+.second-header
+{
+font-size: 23px;
+font-family: "Roboto";
+color: rgb(255, 255, 255);
+font-weight: bold;
+line-height: 1.171;
+}
