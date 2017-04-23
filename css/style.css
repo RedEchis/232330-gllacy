@@ -1,24 +1,53 @@
 body{
    background:#8a9c8f;
    font-size: 12px;
-   font-family: "Roboto";
+   font-family: "Roboto", Helvetica, sans-serif;
    color: rgb(255, 255, 255);
    font-weight: bold;
    line-height: 1.222;
 }
-.first-header <!-- Результат совсем не похож на макет-->
+.first-header
 {
 font-size: 60px;
 color: rgb(255, 255, 255);
-font-family: "Roboto";
+font-family: "Roboto", Helvetica, sans-serif;
 font-weight: bold;
 line-height: 1.006;
 }
 .second-header
 {
 font-size: 23px;
-font-family: "Roboto";
+font-family: "Roboto", Helvetica, sans-serif;
 color: rgb(255, 255, 255);
 font-weight: bold;
 line-height: 1.171;
+}
+main{
+  background: url("../img/bg-main1.png") no-repeat;
+}
+
+.block{
+  width: 420px;
+  height: 229px;
+  border-radius: 10px;
+}
+.promotion-raspberry{
+  background: url("../img/bg-promotion-rasberry.jpg");
+}
+.promotion-chocolate{
+  background: url("../img/bg-promotion-chocolate.jpg");
+}
+.shop-news{
+  color: #000000;
+  background: url("../img/bg-news-strawberry.jpg");
+}
+.mailing{
+  color: #000000;
+  background: #f7f7f4;
+}
+.shop-info{
+  width: 860px;
+  height: 372px;
+  border-radius: 10px;
+  background: url("../img/bg-shop-news.png");
 }
