@@ -16,6 +16,7 @@ line-height: 1.006;
 }
 .second-header
 {
+display:inline-block;
 font-size: 23px;
 font-family: "Roboto", Helvetica, sans-serif;
 color: rgb(255, 255, 255);
@@ -70,14 +71,8 @@ line-height: 1.171;
   outline: 1px solid #928bad;
   height: 60px;
 }
-.main-header{
-  margin-bottom: 265px;
-}
-.inner{
-  margin-bottom: 0px;
-}
-<--Явный костыль Inner. Можно ли проще? -->
 .slider{
+  margin-top: 285px;
   outline: 1px solid #92955d;
   height:230px;
   margin-bottom:20px;
@@ -107,25 +102,27 @@ line-height: 1.171;
   width: 215px;
   outline: 1px solid #33222d;
 }
-.popular-items article {
-  float:left;
+.item {
+  display:inline-block;
   margin-right: 2px;
   height:300px;
   width: 215px;
   outline: 1px solid #33222d;
 }
 .breadcrumbs{
-  float:left;
+  display:inline-block;
   width: 640px;
   height:60px;
   outline: 1px solid #92955d;
   margin-bottom: 5px;
+  vertical-align: top;
+  margin-top: -60px;
 }
 h2{
   float:left;
 }
 .filters{
-  float: left;
+  display:inline-block;
   height: 150px;
   width:880px;
   outline: 1px solid #92955d;
@@ -133,13 +130,13 @@ h2{
 }
 .product{
   min-height: 350px;
-  float:left;
+  display:inline-block;
   width:880px;
   outline: 1px solid #92955d;
   margin-bottom: 28px;
 }
 .paginator{
-  float:left;
+  display:inline-block;
   min-height: 32px;
   width:880px;
   outline: 1px solid #92955d;
@@ -154,24 +151,20 @@ h2{
   background: url("../img/bg-shop-news.png");
   background-size: auto;
 }
+.points{
+  float:left;
+  margin-top: 30px;
+}
 .point{
   float:left;
-  margin-top: 65px;
+  margin-top: 10px;
   margin-right: 1px;
   margin-left: 10px;
   height:130px;
   width: 418px;
   outline: 1px solid #33222d;
 }
-.point:nth-child(n+2){
-  float:left;
-  margin-top:10px;
-  margin-right: 1px;
-  margin-left: 10px;
-  height:130px;
-  width: 418px;
-  outline: 1px solid #33222d;
-}
+
 .news-mailing{
   outline: 1px solid #44445d;
   height:250px;
@@ -205,7 +198,7 @@ h2{
   color: #000000;
   background: #f7f7f4;
 }
-.map .container{
+.map{
   background: url("../img/map.jpg") no-repeat;
   background-size: auto;
 }
