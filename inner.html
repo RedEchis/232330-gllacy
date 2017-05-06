@@ -27,7 +27,7 @@
              </li>
            </ul>
          </nav>
-         <div class="user-block">
+         <div class="user-block clearfix">
            <div class="loop">
            <a href="#">
            </a>
@@ -35,7 +35,7 @@
            <div class="login">
              <a href="#">Вход</a>
            </div>
-           <div class="basket">
+           <div class="basket full">
              <a  href="#">
              Пусто</a>
            </div>
@@ -66,9 +66,12 @@
         <form method="post" action="#">
           <fieldset>
             <legend>Сортировка:</legend>
-            <div class="decorate">
+            <div class="choose decorate">
             <select>
-              <option class="decorate" value="popular">по популярности</option>
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="oil">по жирности</option>
             </select>
           </div>
           </fieldset >
@@ -101,71 +104,112 @@
             <input type="checkbox" name="taste" id="fruits">
             <label for="fruits">фрукты</label>
             <input type="checkbox" name="taste" id="suryp">
-            <label for="suryp">сиропы</label>
+            <label for="suryp">сиропы </label>
             <input type="checkbox" name="taste" id="jam">
             <label for="jam">джемы</label>
             </div>
           </fieldset >
+          <fieldset>
+          <div class="decorate submit">
+            <input type="submit" name="Применить" class="submit-deco">
+          </div>
+        </fieldset>
         </form>
       </div>
       <div class="product">
         <article class="item">
           <img class="cirle" src="img/item-orange-jam.jpg" width="200" height="200" alt="orange-jam">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>310 &#8381;/</span>кг</p>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </article>
-        <article class="item">
+        <article class="item view">
           <img class="cirle" src="img/item-cream-and-coffee.jpg" width="200" height="200" alt="cream-and-coffee">
-          <p class="popular-price"><span>380 &#8381;/кг</p>
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
+          <p class="popular-price"><span>380 &#8381;/</span>кг</p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </article>
-        <article class="item">
+        <article class="item view">
           <img class="cirle" src="img/item-cream-and-strawberry.jpg" width="200" height="200" alt="cream-and-strawberry">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>355 &#8381;/</span>кг</p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </article>
-        <article class="item">
+        <article class="item view">
           <img class="cirle" src="img/item-creme-brulee.jpg" width="200" height="200" alt="creme-brulee">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>415 &#8381;/</span>кг</p>
           <a href="#">Сливочное крем-брюле с карамельное подливкой</a>
         </article>
-        <article class="item">
+        <article class="item view">
           <img class="cirle" src="img/item-cowberry-jam.jpg" width="200" height="200" alt="cowberry-jam">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>325 &#8381;/</span>кг</p>
           <a href="#">Сливочное с брусничным джемом</a>
         </article>
-        <article class="item">
+        <article class="item view">
           <img class="cirle" src="img/item-blueberries.jpg" width="200" height="200" alt="blueberries">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>410 &#8381;/</span>кг</p>
           <a href="#">Сливочно-черничное с цельными ягодами черники</a>
         </article>
-        <article class="item">
+        <article class="item view">
           <img class="cirle" src="img/item-lemon-caramel.jpg" width="200" height="200" alt="lemon-caramel">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>375 &#8381;/</span>кг</p>
           <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
         </article>
         <article class="item">
           <img class="cirle" src="img/item-creme-chocolate.jpg" width="200" height="200" alt="creme-chocolate">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>320 &#8381;/</span>кг</p>
           <a href="#">Сливочное с шоколадной стружкой</a>
         </article>
         <article class="item">
           <img class="cirle" src="img/item-vanil-chocolate.jpg" width="200" height="200" alt="vanil-chocolate">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>440 &#8381;/</span>кг</p>
           <a href="#">Сливочно-ванильное с кусочками шоколада</a>
         </article>
         <article class="item">
           <img class="cirle" src="img/item-mentol.jpg"width="200" height="200" alt="mentol">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>435 &#8381;/</span>кг</p>
           <a href="#">Сливочное с ментоловым сиропом</a>
         </article>
         <article class="item">
           <img class="cirle" src="img/item-black-chocolate.jpg"width="200" height="200" alt="black-chocolate">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>355 &#8381;/</span>кг</p>
           <a href="#">Сливочное с кусочками черного шоколада</a>
         </article>
         <article class="item">
           <img class="cirle" src="img/item-creme-mint.jpg" width="200" height="200" alt="creme-mint">
+          <div class="actions">
+          <a href="#" class="view">Быстрый просмотр</a>
+          </div>
           <p class="popular-price"><span>420 &#8381;/</span>кг</p>
           <a href="#">Сливочное с мятным сиропом</a>
         </article>
