@@ -15,32 +15,59 @@
            <a><img src="img/logo.png" width="154" height="64" alt="Глейси"></a>
          </div>
          <nav class="main-navigation">
-           <ul>
-             <li>
-               <a href="#" class="active">Каталог</a>
+           <ul class="main-menu">
+             <li >
+               <a class="top-menu-item" href="#">Каталог</a>
                <ul class="sub-menu">
-                   <li><a href="#1" class="first-point"><b>Новинки</b></a></li>
+                   <li><a href="#1" class="highlight"><b>Новинки</b></a></li>
                    <li><a href="#2">Сливочное</a></li>
                    <li><a href="#3">Щербеты</a></li>
                    <li><a href="#4">Фруктовый лед</a></li>
                    <li><a href="#5">Мелорин</a></li>
                </ul>
              </li>
-             <li>
-               <a href="#">Доставка и оплата</a>
+             <li >
+               <a class="top-menu-item" href="#">Доставка и оплата</a>
              </li>
              <li>
-               <a href="#">О компании</a>
+               <a class="top-menu-item" href="#">О компании</a>
              </li>
            </ul>
          </nav>
          <div class="user-block clearfix">
            <div class="loop">
-           <a href="#">
-           </a>
-         </div>
+             <div class="search">
+                <a class="search-button" href="#"></a>
+              </div>
+              <div class="search-form">
+                <form action="" method="post">
+                  <input type="search" name="search" placeholder="Что ищем?">
+                  <label class="hiden-top">
+                    <span>Что ищем?</span>
+                  </label>
+                </form>
+              </div>
+
+           </div>
            <div class="login">
-             <a href="#">Вход</a>
+             <a href="#" class="login-button">Вход</a>
+             <div class="login-form clearfix">
+               <form class="autoriz" action="#" method="post">
+                 <input type="email" name="email" placeholder="Электронная почта">
+                 <label class="hiden-top">
+                   <span>Электронная почта</span>
+                 </label>
+                 <input type="text" name="password" placeholder="Пароль">
+                 <label class="hiden-top">
+                   <span>Пароль</span>
+                  </label>
+                <button class="btn" type="submit" value="Войти">Войти</button>
+               </form>
+                <div class="reg-links">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </div>
            </div>
            <div class="basket full">
              <a  href="#">
@@ -60,9 +87,11 @@
           <li>
             <a href="">Главная</a>
           </li>
+          <li>&raquo;</li>
           <li>
             <a href="">Каталог</a>
           </li>
+          <li>&raquo;</li>
           <li>
             <p>Сливочное</p>
           </li>
@@ -71,18 +100,16 @@
       <h2 class="second-header">Сливочное мороженое</h2>
       <div class="filters">
         <form method="post" action="#">
-          <fieldset>
+          <fieldset class="filter">
             <legend>Сортировка:</legend>
-            <div class="choose decorate">
             <select>
               <option value="popular">по популярности</option>
               <option value="cheap">сначала недорогие</option>
               <option value="expensive">сначала дорогие</option>
               <option value="oil">по жирности</option>
             </select>
-          </div>
           </fieldset >
-          <fieldset>
+          <fieldset class="filter">
             <div class="range-filter">
               <div class="price-controls">
                 <label class="min-price">Цена:<input name="min-price" type="text" value="100"></label>
@@ -96,9 +123,8 @@
               <div class="toggle toggle-min"></div>
               <div class="toggle toggle-max"></div>
             </div>
-
           </fieldset >
-          <fieldset >
+          <fieldset class="filter" >
             <legend for="group-item">Жирность:</legend>
             <div class="decorate">
             <input type="radio" name="group-item" value="0%" id="0">
@@ -109,9 +135,9 @@
             <label for="30-"> до 30%</label>
             <input type="radio" name="group-item" value="выше 30%" id="30+">
             <label for="30+">выше 30%</label>
-          </div>
+            </div>
           </fieldset >
-          <fieldset >
+          <fieldset class="filter">
             <legend>Наполнители:</legend>
             <div class="decorate">
             <input type="checkbox" name="taste" id="chocolate" checked>
@@ -126,11 +152,7 @@
             <label for="jam">джемы</label>
             </div>
           </fieldset >
-          <fieldset>
-          <div class="decorate submit">
-            <input type="submit" value="Применить" class="submit-deco">
-          </div>
-        </fieldset>
+          <button class="filter-button" type="submit" value="Применить">Применить</button>
         </form>
       </div>
       <div class="product">
@@ -231,12 +253,16 @@
           <a href="#">Сливочное с мятным сиропом</a>
         </article>
       </div>
-      <div class="paginator">
-        <a class="paginator-active" href="">1</a>
-        <a href="">2</a>
-        <a href="">3</a>
-        <a href="">4</a>
-        <a href="">5</a>
+      <div class="paginators">
+        <ul class="paginator">
+        <li>&lt;</li>
+        <li class="paginator-active"><a href="#">1</a></li>
+        <li href=""><a href="#">2</a></li>
+        <li href=""><a href="#">3</a></li>
+        <li href=""><a href="#">4</a></li>
+        <li href=""><a href="#">5</a></li>
+        <li>&gt;</li>
+      </ul>
       </div>
     </main>
     <footer class="main-footer clearfix">
